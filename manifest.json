@@ -6,7 +6,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.nytimes.com/crosswords/*"
+                "https://www.nytimes.com/crosswords/*",
+                "https://www.nytimes.com/puzzles/*"
             ],
             "js": ["xwordutils.js"]
         }
