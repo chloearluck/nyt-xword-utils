@@ -1,0 +1,15 @@
+  {
+    "name": "New York Times Crossword Utilities",
+    "version": "1.0",
+    "description": "Toggle pencil tool with keyboard, hide navigation bar",
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.nytimes.com/crosswords/*"
+            ],
+            "js": ["xwordutils.js"]
+        }
+    ],
+    "manifest_version": 2
+  }
