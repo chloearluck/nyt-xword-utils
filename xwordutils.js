@@ -29,7 +29,7 @@ window.onkeydown = (event) => {
   }
 }
 
-window.onkeyUp = (event) => {
+window.onkeyup = (event) => {
   if (event.key == modifier)
     modifierDown = false;
 }
