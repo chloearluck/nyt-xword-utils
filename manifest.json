@@ -12,5 +12,10 @@
             "js": ["xwordutils.js"]
         }
     ],
+    "icons": {
+        "16": "icons/xword-utils16.png",
+        "48": "icons/xword-utils48.png",
+        "128": "icons/xword-utils128.png"
+    },
     "manifest_version": 2
   }
