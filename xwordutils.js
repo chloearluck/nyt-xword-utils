@@ -3,10 +3,10 @@ const togglePencilKey = "KeyT"
 const toggleMenuKey = "KeyH"
 
 const getPencilButton = () => {
-  let pencilIcons = document.getElementsByClassName("Icon-pencil--1cTxu Icon-icon--1RAWC");
+  let pencilIcons = document.getElementsByClassName("xwd__toolbar_icon--pencil-active");
   if (pencilIcons.length == 1)
-    return pencilIcons[0].parentElement;
-  pencilIcons = document.getElementsByClassName("pencil-mode-toggle")
+    return pencilIcons[0];
+  pencilIcons = document.getElementsByClassName("xwd__toolbar_icon--pencil")
   if (pencilIcons.length == 1)
     return pencilIcons[0];
   return null;
@@ -48,8 +48,7 @@ const toggleMenu = () => {
 }
 
 const togglePencil = () => {
-  if (!pencilButton)
-    pencilButton = getPencilButton();
+  let pencilButton = getPencilButton();
 
   if (pencilButton)
     pencilButton.click();
